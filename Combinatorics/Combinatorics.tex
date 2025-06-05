@@ -18,12 +18,27 @@ To form a five-digit even number, the last digit must be one of the even digits.
 Therefore we have the following choices for the last digit: 0, 2, 4, 6, 8.\\
 \\
 There are \textbf{5 choices} for the last digit.\\
-However, we must consider the cases where the last digit is 0 and where it is not.
-
+However, we must consider the cases where the last digit is 0 and where it is not.\\
+\\
 That's because if we choose 0 as the last digit, then the choice doesn't affect the first digit,
-but if we choose any other even digit, then it reduces the choices for the first digit with one less option. \\
+but if we choose any other even digit, then it reduces the choices for the first digit with one less option.\\
 \\
 We split the cases as follows:\\
-
 $\overset{}{\overline{9}} \cdot \overset{}{\overline{8}} \cdot \overset{}{\overline{7}} \cdot \overset{}{\overline{6}} \cdot \overset{0}{\overline{1}} + \overset{}{\overline{8}} \cdot \overset{}{\overline{8}} \cdot \overset{}{\overline{7}} \cdot \overset{}{\overline{6}} \cdot \overset{2,4,6,8}{\overline{4}}$
+\subsection{Exercise}
+How many different 4-digit safe codes are there with exactly one odd digit in them?
+\subsubsection*{Solution}
+First of all, the provided description of the problem tells us that's safe codes\\
+and not numbers, so we can use 0 as the first digit.\\
+\\
+What's more, the problem states that there is exactly one odd digit\\
+in the code, which means that the other three digits must be even.\\
+\\
+There are 5 odd and also 5 even digits.
+\\
+We can choose the position of the odd digit in 4 different ways,\\
+as the code has 4 digits.\\
+\\
+Therefore, the total number of different 4-digit safe codes with exactly one odd digit is given by:\\
+$(4 \cdot \overset{odd}{\overline{5}}) \cdot \overset{even}{\overline{5}} \cdot \overset{even}{\overline{5}} \cdot \overset{even}{\overline{5}} = 4 \cdot 5^4$
 \end{document}
