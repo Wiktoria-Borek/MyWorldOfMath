@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{amsmath}
+\hbadness=10000 % Suppress underfull hbox warnings
+
+\title{Combinatorics}
+\author{Wiktoria Borek}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Basic Exercises}
+\subsection{Exercise}
+How many five-digit even numbers are there in which no digit repeats?
+\subsubsection*{Solution}
+To form a five-digit even number, the last digit must be one of the even digits.\\
+Therefore we have the following choices for the last digit: 0, 2, 4, 6, 8.\\
+\\
+There are \textbf{5 choices} for the last digit.\\
+However, we must consider the cases where the last digit is 0 and where it is not.
+
+That's because if we choose 0 as the last digit, then the choice doesn't affect the first digit,
+but if we choose any other even digit, then it reduces the choices for the first digit with one less option. \\
+\\
+We split the cases as follows:\\
+
+$\overset{}{\overline{9}} \cdot \overset{}{\overline{8}} \cdot \overset{}{\overline{7}} \cdot \overset{}{\overline{6}} \cdot \overset{0}{\overline{1}} + \overset{}{\overline{8}} \cdot \overset{}{\overline{8}} \cdot \overset{}{\overline{7}} \cdot \overset{}{\overline{6}} \cdot \overset{2,4,6,8}{\overline{4}}$
+\end{document}
