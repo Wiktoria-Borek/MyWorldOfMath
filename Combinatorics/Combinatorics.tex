@@ -47,4 +47,29 @@ How many different 4-digit safe codes are there in which there is exactly one od
 The situation is similar to the previous exercise,\\
 but now we have the restriction that all digits must be \textbf{different}.\\
 $(4 \cdot \overset{odd}{\overline{5}}) \cdot \overset{even}{\overline{5}} \cdot \overset{even}{\overline{4}} \cdot \overset{even}{\overline{3}} = 5^2 \cdot 4^2 \cdot 3$
+\subsection{Exercise}
+Bill has in his closet pants in 4 colors: black, blue, green and red; shirts in 3 colors: white, blue and green;
+and hats in 5 different colors. How many different sets of clothes consisting of 1 pants, 1 shirt and 1 hat can Bill create?
+How many such sets are there in which the pants and shirt are one color?
+\subsubsection*{Solution}
+Let's begin answering the first question.\\
+This question itself explains that Bill has 4 pants, 3 shirts and 5 hats,\\
+because it treats them as separate items of one color each.\\
+\\
+Therefore, the total number of different sets of clothes consisting of 1 pants, 1 shirt and 1 hat is given by:\\
+$4 \cdot 3 \cdot 5 = 60$\\
+\\
+Now let's answer the second question.\\
+\\
+We find that the pants and shirt are one color, where the color is blue or green,\\
+so there are 2 colors that can be chosen for both pants and shirt.\\
+For both pairs of one color each, there are 5 choices for the hat,\\
+because the hat can be of any color being mentioned previously,\\
+but not to be a specific color.\\
+\\
+Therefore, the total number of sets of clothes in which the pants and shirt are one color is given by:\\
+$2 \cdot 5 = 10$\\
+\\
+That's because for 2 sets we take 5 hats separately, where each set has\\
+pants and shirt of the same color.
 \end{document}
